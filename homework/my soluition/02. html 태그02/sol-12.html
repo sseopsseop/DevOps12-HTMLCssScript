@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>프런트엔드 개발자 지원서</title>
+    <style>
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; 
+                color:#800080;}
+			ul {list-style-type: none;}
+			li { line-height:30px;}
+        label{
+            margin-right:10px;
+        }
+        #label-title{
+            font-weight:bold;
+        }
+    </style>
+  </head>
+  <body>
+		<div id="container">
+			<h1>프런트엔드 개발자 지원서 </h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form>
+				<fieldset>
+                    <legend>개인정보</legend>
+                    <ul>
+                        <li>
+                            <label for="p-name" id="label-title">
+                                이름
+                                <input type="text" id="p-name" name="p-name" placeholder="공백없이 입력하세요">
+                            </label>
+                        </li>
+                        <li>
+                            <label for="p-phone" id="label-title">
+                                연락처
+                                <input type="tel" id="p-phone" name="p-phone" placeholder="연락 가능한 번호">
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>배송지 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="ship-address" id="label-title">주소
+                                <input type="text" id="ship-address" name="ship-address">
+                            </label>
+                        </li>
+                        <li>
+                            <label for="ship-tel" id="label-title">전화번호
+                                <input type="text" id="ship-tel" name="ship-tel">
+                            </label>
+                        </li>
+                        <li>
+                            <label for="ship-memo" id="label-title">메모
+                                <textarea maxlength="60" rows="5" style="width:60%" 
+                        id="ship-memo" name="ship-memo"></textarea>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>주문 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="coffee-checkbox1">
+                                <input type="checkbox" id="coffee-checkbox1" name="coffee-checkbox1">
+                                과테말라 안티구아 (100g)
+                                <input type="number" id="coffee1-cnt" name="coffee1-cnt" min="0" max="99" step="1" value="0">
+                                개
+                            </label>
+                        </li>
+                        <li>
+                            <label for="coffee-checkbox2">
+                                <input type="checkbox" id="coffee-checkbox2" name="coffee-checkbox2">
+                                인도네시아 만델링 (100g)
+                                <input type="number" id="coffee2-cnt" name="coffee2-cnt" min="0" max="99" step="1" value="0">
+                                개
+                            </label>
+                        </li>
+                        <li>
+                            <label for="coffee-checkbox3">
+                                <input type="checkbox" id="coffee-checkbox3" name="coffee-checkbox3">
+                                탐라는 도다(블렌딩) (100g)
+                                <input type="number" id="coffee3-cnt" name="coffee3-cnt" min="0" max="99" step="1" value="0">
+                                개
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div style="text-align: center;">                   
+                    <input type="submit" value="주문하기">
+                    <input type="reset" value="다시작성">
+                </div>
+			</form>
+		</div>
+  </body>
+</html>

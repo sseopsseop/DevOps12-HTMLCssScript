@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>프런트엔드 개발자 지원서</title>
+    <style>
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; }
+			ul {list-style-type: none;}
+			li { line-height:30px;}
+    </style>
+  </head>
+  <body>
+		<div id="container">
+			<h1>프런트엔드 개발자 지원서 </h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form>
+				<fieldset>
+                    <legend>개인정보</legend>
+                    <ul>
+                        <li>
+                            <label for="p-name">이름
+                                <input type="text" id="p-name" name="p-name" placeholder="공백없이 입력하세요">
+                            </label>
+                        </li>
+                        <li>
+                            <label for="p-phone">연락처
+                                <input type="tel" id="p-phone" name="p-phone">
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>지원 분야</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="field">
+                                웹 퍼블리싱
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="field">
+                                웹 애플리케이션 개발
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="field">
+                                개발 환경 개선
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend style="margin-bottom: 15px;">지원 동기</legend>
+                    <label>
+                        <textarea maxlength="60" rows="5" style="width:100%" 
+                        id="apply-context" name="appliy-context">본사 지원 동기를 간략히 써주세요</textarea>
+                    </label>
+                    <input type="submit" value="접수하기">
+                    <input type="reset" value="다시쓰기">
+                </fieldset>
+			</form>
+		</div>
+  </body>
+</html>
